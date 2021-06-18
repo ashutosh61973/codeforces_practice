@@ -144,24 +144,24 @@ int main()
 */
     int n;
     cin >> n;
-    string s, f;
+    string s, p;
     cin >> s;
     for (int i = 0; i < n; i++)
     {
-        if (f.size() % 2 == 0)
+        if (p.size() % 2 == 0)
         {
-            f.push_back(s[i]);
+            p.push_back(s[i]);
         }
-        else if (f.back() != s[i])
+        else if (p.back() != s[i])
         {
-            f.push_back(s[i]);
+            p.push_back(s[i]);
         }
     }
-    if (f.size() % 2)
+    if (p.size() % 2)
     {
-        f.pop_back();
+        p.pop_back();
     }
-    cout << (n - (f.size()));
+    cout << (n - (p.size()));
     cout << endl;
-    cout << f << endl;
+    cout << p << endl;
 }
